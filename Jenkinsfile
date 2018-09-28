@@ -1,6 +1,5 @@
 @Library("jenkins-shared-library")
 
-pipeline {
     stages {
         stage('build') {
             steps {
@@ -13,4 +12,3 @@ pipeline {
             }
         }
     }
-}
