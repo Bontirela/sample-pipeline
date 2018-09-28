@@ -1,6 +1,7 @@
 @Library("jenkins-shared-library")
 
-    stages {
+node('master') {
+   
         stage('build') {
             steps {
 					mvn --version
@@ -11,4 +12,5 @@
 					echo "This is it"
             }
         }
-    }
+    
+}
