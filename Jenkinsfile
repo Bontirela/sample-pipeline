@@ -1,16 +1,5 @@
-@Library("jenkins-shared-library")
-
-node('master') {
-   
+node('master') {  
         stage('build') {
-            steps {
-					mvn --version
-            }
+           echo %Java_HOME%
         }
-		stage('Deploy') {
-            steps {
-					echo "This is it"
-            }
-        }
-    
 }
